@@ -2042,3 +2042,94 @@ line-height: 1.5; }
     }
 }
 }
+/* ============================================================
+   RESPONSIVE (Top Bar + About Pag)
+   ============================================================ */
+
+@media (max-width: 1263px) {
+    .top-bar-left {
+        width: auto !important;
+        gap: 15px !important;
+    }
+
+    .url-text {
+        flex: 1 !important; 
+        margin: 0 15px !important;
+        min-width: 120px !important;
+    }
+
+    
+    .mission-vision-container {
+        flex-direction: column !important; 
+        width: 90% !important;
+        height: auto !important;
+        margin: 20px auto !important;
+        gap: 20px !important;
+    }
+
+    .mission-vision-container .card {
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+        padding: 25px !important;
+    }
+}
+
+@media (max-width: 768px) {
+  
+    .browser-top-bar {
+        padding: 0 10px !important;
+        height: auto !important;
+        min-height: 56px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .navigation-arrows {
+        display: none !important;
+    }
+
+    .url-text {
+        order: 3;
+        width: 100% !important;
+        margin: 5px 0 10px 0 !important;
+    }
+
+    .stats-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+    .stat-card {
+        width: 90% !important;
+        max-width: 320px !important;
+    }
+
+    .team-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .section-title, .group-category-title {
+        font-size: 28px !important;
+    }
+
+    .about-description {
+        font-size: 18px !important;
+        padding: 0 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .dot {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    
+    .window-dots {
+        gap: 8px !important;
+    }
+}
